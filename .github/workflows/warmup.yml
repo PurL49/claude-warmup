@@ -1,8 +1,9 @@
 name: Claude Code Warmup
 
 on:
-  schedule:
-    - cron: '0 4 * * 1-5'
+#  schedule:
+#    - cron: '0 4 * * 1-5'
+# schedule désactivé car le trigger est délégé à un worker Cloudflare
   workflow_dispatch: {}
 
 concurrency:
